@@ -4,5 +4,8 @@
     <string name="app_name">Alarm</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="compass_dial">com.example.mac.alarm.Compass Dial</string>
+    <string name="compass_hands">com.example.mac.alarm.Compass Hands</string>
+
 
 </resources>
