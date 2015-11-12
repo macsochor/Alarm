@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+import com.example.mac.alarm.CompassActivity;
 
 import java.util.Calendar;
 
@@ -55,8 +56,8 @@ public class AlarmActivity extends Activity {
             Calendar calendar = Calendar.getInstance();
             calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
             calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
-            Intent myIntent = new Intent(AlarmActivity.this, Compass.class);
-            myIntent.putExtra("extra", true);
+            Intent myIntent = new Intent(AlarmActivity.this, CompassActivity.class);
+//            myIntent.putExtra("extra", true);
             AlarmActivity.this.startActivity(myIntent);
 //            pendingIntent = PendingIntent.getBroadcast(AlarmActivity.this, 0, myIntent, 0);
 //            alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
